@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harcama Hesaplama</title>
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hoşgeldin, <input type="text" placeholder="Adınızı Giriniz"></h1>
+        <form>
+            <div class="double">
+                <div class="field">
+                    <label>Harcama</label>
+                    <input id="harcama" type="text">
+                </div>
+                <div class="field">
+                    <label>Fiyat</label>
+                    <input id="fiyat" type="number">
+                </div>
+            </div>
+            <div class="double" id="sec-double">
+                <div>
+                    <input id="odeme" type="checkbox">
+                    <label for="odeme">Ödendi</label>
+                </div>
+                <button id="eklemeBtn">Ekle</button>
+            </div>
+        </form>
+        <div class="toplam-box">Toplam Harcama : <span id="toplam">0 </span> &#8378;</div>
+        <div class="liste">
+            
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

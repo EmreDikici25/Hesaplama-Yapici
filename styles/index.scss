@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    background-color: white;
+    min-width: 60wh;
+    max-width: 80wh;
+    height: 80vh;
+    border-radius: 10px;
+    padding: 10px 20px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    h1{
+        margin-left: 10px;
+        input{
+            border: none;
+            margin-left: 10px;
+            font-size: 23px;
+            outline: none;
+        }
+    }
+
+    .double{
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        margin-top: 10px;
+        .field{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        label{
+            font-size: 20px;
+        }
+        input{
+            padding: 5px 10px;
+            border-radius: 10px;
+            border: 1px solid gray;
+        }
+    }
+
+    #sec-double{
+        gap: 100px;
+        justify-content: center;
+        align-items: center;
+
+        button{
+            padding: 10px 20px;
+            background-color: rgba(0, 51, 255, 0.763);
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+            color: white;
+        }
+    }
+}
+
+.liste{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow: auto;
+    padding: 10px;
+    .item{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+        border-radius: 10px;
+        padding: 5px;
+        h1{
+            font-size: 30px;
+        }
+        h2{
+            font-size: 25px;
+            color: red;
+        }
+        img{
+            width: 40px;
+            cursor: pointer;
+            padding-right: 10px;
+        }
+    }
+}
+
+.toplam-box{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    #toplam{
+        color: red;
+    }
+}
+
+.odendi{
+    opacity: 0.8;
+    h2{
+        color: green !important;
+    }
+}
